@@ -65,25 +65,3 @@ Exec into the pods to verify if the volumes are mounted correctly.
 - Run the script and deploy the pod. Exec into the pod and see if the config files are available. If the config values are changed, they are reflected in the files, not the environment variables
 
 **Task 4: Try to spin up a huge pod with 4vCPUs & 4Gi RAM and see why it's not getting scheduled.
-
-k config use-context minikube --namespace training-space
-
-k config use-context arn:aws:iam::853973692277:role/trainee-aditi-1f6afefd --namespace=trainee-aditi
-
- k config use-context training-aditi
- k config set-context --current --namespace=trainee-aditi
-
-krew 
-kctx
-
-1 : CTF{H3D7L2Q9W6R1N5T8Y4}
-2 : CTF{P1Z9M4C7V2K6T3R8J5}
-3: CTF{Q8R2T7Y1N5W3L9D6K4}
-5: CTF{N4T8R2W6L1Q9Y3D7K5}
-4: CTF{M7V3K1P9R6Z2T8Q4N5}
-
-1. Scaled web-app deployment to 3 replicas
-2. Deleted orphan ReplicaSet
-3. Fixed mislabeled pod
-4. Verified logging-prod pod is running
-5. Deployed database StatefulSet

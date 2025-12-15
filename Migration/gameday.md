@@ -368,27 +368,5 @@ If you tell me:
 I can give you a **concrete config (parameter values, security group rules, and DMS task JSON)** tailored exactly to your setup
 
 
-**aurora: 
-
-username: postgres 
-passwd: postgrespass
-
-writer endpoint: aurora-db-team3-fin.cluster-cuukwis7t1js.us-east-1.rds.amazonaws.com
-reader endpoint: aurora-db-team3-fin.cluster-ro-cuukwis7t1js.us-east-1.rds.amazonaws.com
-
-db source: boltbike 
-owner: backend
-pass: backendpass
-migrated db name: database_migrated
-
-*CREATING DMS USER:
-CREATE USER 'dmsuser' IDENTIFIED BY 'dmspass!';
-GRANT SELECT, REPLICATION SLAVE, REPLICATION CLIENT ON *.* TO 'dmsuser';
-GRANT SHOW VIEW, TRIGGER, REPLICATION CLIENT ON *.* TO 'dms_user';*
-
-this is the dms credentials that have to be used 
-
-modify the security group of the source region db instance - postgresql 
-
 
 

@@ -33,5 +33,3 @@
 **Tasks:**
 3. Create a multi-branch pipeline that auto-detects branches from a Git repo. Create a shared library (vars/ folder) and integrate it using `@Library()`. For feature branches, run a simple build; for main branch, run full flow including shared library functions.
    
-   **Solution:**
-   - 
